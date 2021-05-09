@@ -99,7 +99,7 @@
                                 <a href="service.html" class="nav-item nav-link">Services<br> & Security</a>
                                 <a href="vault.html" class="nav-item nav-link">Underground <br> Vaults</a>
                                 <a href="insurance.html" class="nav-item nav-link">Insurance</a>
-                                <a href="tracking.html" class="nav-item nav-link">Tacking</a>
+                                <a href="tracking.html" class="nav-item nav-link">Tracking</a>
                                 <a href="Login.html" class="nav-item nav-link">Client Login</a>
                                 </div>
                             </div>
@@ -142,7 +142,7 @@
                             </div>
                             <div class="about-text">
                                 <p>
-                                    we are proudly an international logistics and sophisticated private safe depository. We secure your valuable assets, documents and data backup at a guaranteed international service standard.
+                                    hello your package with id "<span id="trackmo"> </span>" is on its way to the desired location kindly contact admin for more details
                                 </p>
                                 
                             
@@ -276,6 +276,12 @@
         </div>
 
         <!-- JavaScript Libraries -->
+        <script>
+            var currentUrl = window.location.href
+            var url = new URL(currentUrl);
+            var trackingcode = url.searchParams.get("vault-tracking");
+            document.getElementById("trackmo").innerHTML=trackingcode;
+        </script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>
