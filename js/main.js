@@ -1,8 +1,20 @@
+function logout(){
+    localStorage.removeItem("email");
+    window.location.replace("index.html");
+}
+
 (function ($) {
     "use strict";
     
     // Initiate the wowjs
     new WOW().init();
+
+    
+    var email = localStorage.getItem("email");
+    if (email){
+        $("#client-login").remove()
+        $("#client-logout").show()
+    }
     
     
     // Back to top button

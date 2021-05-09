@@ -62,6 +62,20 @@ $(function() {
           event.preventDefault();
           event.stopPropagation();
         }
+		else {
+			event.preventDefault();
+			var email = $("#email").val();
+			var password = $("#password").val();
+			if(email == "thomasmike7060@gmail.com" && password == "tomjoseph52"){
+				$("#logmsg").html("")
+				localStorage.setItem("email", email);
+				window.location.replace("index.html");
+
+			}
+			else{
+				$("#logmsg").html("email or password incorrect")
+			}
+		}
 		form.addClass('was-validated');
 	});
 });
