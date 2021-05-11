@@ -37,7 +37,7 @@ a:focus {
 .wrapper {
     position: relative;
     width: 100%;
-    max-width: 1366px;
+    /* max-width: 1366px; */
     margin: 0 auto;
     background: #ffffff;
 }
@@ -167,7 +167,7 @@ a:focus {
     position: fixed;
     top: 0;
     width: 100%;
-    max-width: 1366px;
+    /* max-width: 1366px; */
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
     z-index: 999;
 }
@@ -212,7 +212,7 @@ a:focus {
 
 @media (min-width: 992px) {
     .nav-bar {
-        padding: 0 75px;
+        /* padding: 0 75px; */
     }
     
     .nav-bar.nav-sticky {
@@ -2233,3 +2233,4 @@ a:focus {
         text-align: center;
     }
 }
+
